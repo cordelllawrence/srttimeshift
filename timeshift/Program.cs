@@ -26,13 +26,13 @@ namespace timeshift
 
             if (!File.Exists(source))
             {
-                Console.WriteLine($"Target file '{source}' does not exist.");
+                Console.WriteLine($"Source .SRT file '{source}' does not exist.");
                 return;
             }
 
             if(File.Exists(output))
             {
-                Console.WriteLine($"Destination file '{output}' already exists.");
+                Console.WriteLine($"Output .SRT file '{output}' already exists.");
                 return;
             }
 
@@ -92,7 +92,7 @@ namespace timeshift
             Console.WriteLine("Caption goes here!");
             Console.WriteLine("");
             Console.WriteLine("USAGE:");
-            Console.WriteLine("timeshift.exe [target filename] [miliseconds] [destination filename]");
+            Console.WriteLine("timeshift.exe [source srt filename] [miliseconds] [output srt filename]");
         }
 
     }
